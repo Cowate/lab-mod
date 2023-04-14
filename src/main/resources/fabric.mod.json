@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "lab-mod",
+  "version": "${version}",
+  "name": "Lab Mod",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/lab-mod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "com.cowate.labmod.datagen.ThisDataGeneration"
+    ],
+    "client": [
+      "com.cowate.labmod.client.LabModClient"
+    ],
+    "main": [
+      "com.cowate.labmod.LabMod"
+    ]
+  },
+  "mixins": [
+    "lab-mod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.14",
+    "fabric": "*",
+    "minecraft": "1.16.5"
+  }
+}
